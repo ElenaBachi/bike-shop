@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <nav class="main-nav">
+      <button class="main-nav__toogle"><span class="visually-hidden">Открыть меню</span></button>
+
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a class="main-nav__link">О нас</a>
+        </li>
+
+        <li class="main-nav__item">
+          <a class="main-nav__link">Виды велосипедов</a>
+        </li>
+
+        <li class="main-nav__item">
+          <a class="main-nav__link">Видео про велосипеды</a>
+        </li>
+
+        <li class="main-nav__item">
+          <a class="main-nav__link">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="promo">
+      <div class="promo__intro">
+        <h1 class="visually-hidden">Магазин велосипедов Moon</h1>
+
+        <a href="" class="promo__intro-logo">
+          <img src="img/logo.svg" alt="Магазин велосипедов Moon" width="67.6" height="20.28">
+        </a>
+
+        <h2 class="promo__intro-title">Мы продаем велосипеды</h2>
+        <p class="promo__intro-text">
+          Наш магазин отбирает только самые лучшие велосипеды для продажи
+        </p>
+      </div>
+
+      <div class="promo__form">
+        <p class="promo__form-text">
+          Заполните поля ниже и мы подберем велосипед Вашей мечты
+        </p>
+
+        <ul class="promo__from-list">
+          <li class="promo__form-item">
+            <input type="text" id="name" name="name" placeholder="Введите Ваше Имя">
+          </li>
+
+          <li class="promo__form-item">
+            <input type="tel" id="phone" name="phone" placeholder="Введите Ваш номер телефона">
+          </li>
+
+          <li class="promo__form-item">
+            <button class="button" type="submit">Подобрать велосипед мечты</button>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section class="about">
+      <h2 class="about__title">Несколько фактов о нас</h2>
+
+      <ul class="about__list">
+        <li class="about__item">
+          <span>01</span>
+          <p>Самый широкий выбор велосипедов!</p>
+        </li>
+
+        <li class="about__item">
+          <span>02</span>
+          <p>Доставка велосипедов по всей России!</p>
+        </li>
+
+        <li class="about__item">
+          <span>03</span>
+          <p>Большой выбор крутых аксессуаров!</p>
+        </li>
+
+        <li class="about__item">
+          <span>04</span>
+          <p>Профессиональные консультации!</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="assortment">
+      <h2 class="assortment__title">Виды велосипедов</h2>
+
+      <div class="assortment__list bike">
+        <figure class="assortment__item bike__road">
+          <img src="img/road-bike-desktop@1x.jpg" alt="Дорожный велосипед">
+          <figcaption>Дорожный велосипед</figcaption>
+        </figure>
+
+        <figure class="assortment__item bike__mount">
+          <img src="img/mount-bike-desktop@1x.jpg" alt="Горный велосипед">
+          <figcaption>Горный велосипед</figcaption>
+        </figure>
+
+        <figure class="assortment__item bike__kids">
+          <img src="img/kids-bike-desktop@1x.jpg" alt="Детский велосипед">
+          <figcaption>Детский велосипед</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="video">
+      <h2 class="video__title">Видео про велосипеды</h2>
+      <p class="video__text">В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
+
+      <div class="video__player">
+        <img src="img/video-bg-desktop@1x.jpg" alt="Видео">
+
+        <svg width="65" height="65" viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M32.5 65C50.4493 65 65 50.4493 65 32.5C65 14.5507 50.4493 0 32.5 0C14.5507 0 0 14.5507 0 32.5C0 50.4493 14.5507 65 32.5 65Z" fill="#0AD9C6"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M28.6001 23.3999L41.6001 32.4999L28.6001 41.5999V23.3999Z" fill="#070707"/>
+          </svg>
+      </div>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <h2 class="page-footer__title">Как нас найти?</h2>
+    <p class="page-footer__text">Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1998.6593281539995!2d30.32165142226179!3d59.93779492457777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1602102745623!5m2!1sru!2sru" width="957" height="530" style="border: 0;" allowfullscreen=""></iframe>
+
+    <div class="page-footer__contacts contacts">
+      <a class="contacts__mail" href="mailto:puteshestviemechta@gmail.ru">puteshestviemechta@gmail.ru</a>
+      <a class="contacts__phone" href="tel:+749978468446">+7 (499) -784-684-46</a>
+    </div>
+  </footer>
+</body>
+</html>
