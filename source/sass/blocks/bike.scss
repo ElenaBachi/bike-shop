@@ -1,0 +1,59 @@
+.bike {
+  position: relative;
+  z-index: 1;
+}
+
+.bike__road::before {
+  content: "";
+  position: absolute;
+  top: 156px;
+  left: -60px;
+  z-index: -1;
+
+  width: 180px;
+  height: 180px;
+
+  border: 27px solid $bg-color-blue;
+  border-radius: 50%;
+}
+
+.bike__mount {
+  margin-top: 39px;
+}
+
+.bike__mount::before {
+  content: "";
+  position: absolute;
+  top: 11px;
+  left: 365px;
+
+  width: 47px;
+  height: 47px;
+
+  border: 8px solid $bg-color-blue;
+}
+
+.bike__mount::after {
+  content: "";
+  position: absolute;
+  bottom: 23px;
+  right: 369px;
+
+  width: 47px;
+  height: 47px;
+
+  border: 8px solid $bg-color-blue;
+}
+
+.bike__kids::before {
+  content: "";
+  position: absolute;
+  top: -32px;
+  right: -36px;
+
+  width: 95px;
+  height: 95px;
+
+  border: 17px solid $bg-color-blue;
+  border-radius: 50%;
+}

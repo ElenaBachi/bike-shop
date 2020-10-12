@@ -1,0 +1,39 @@
+.video {
+  min-height: 706px;
+  margin: 0;
+  padding: 0;
+  padding-top: 120px;
+  box-sizing: border-box;
+
+  text-align: center;
+
+  background-color: $bg-color-dark;
+}
+
+.video__title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.video__text {
+  display: block;
+
+  width: 23.61%;
+  margin: 0 auto;
+  margin-bottom: 56px;
+  padding: 0;
+
+  @include text (16px, 28px, lighter);
+}
+
+.video__player {
+  position: absolute;
+  left: 17.78%;
+}
+
+.video__player svg {
+  position: absolute;
+  top: 229px;
+  left: 432px;
+}

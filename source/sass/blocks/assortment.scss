@@ -1,0 +1,37 @@
+.assortment {
+  padding-bottom: 147px;
+
+  color: $font-color-dark;
+  text-align: center;
+
+  background-color: $bg-color-grey;
+}
+
+.assortment__title {
+  margin: 0;
+  margin-bottom: 50px;
+  padding: 0;
+  padding-top: 150px;
+}
+
+.assortment__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 11.74%;
+  margin-right: 10.07%;
+
+  @include text (22px, 34px, 600);
+}
+
+.assortment__item {
+  margin: 0;
+  padding: 0;
+}
+
+.assortment__item img {
+  display: block;
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+}

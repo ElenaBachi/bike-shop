@@ -1,0 +1,47 @@
+.contacts {
+  position: relative;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  width: 38.75%;
+  margin: 0 auto;
+  margin-top: 35px;
+  margin-bottom: 98px;
+  padding: 0;
+}
+
+.contacts a {
+  @include text (16px, auto, normal);
+
+  color: #000000;
+}
+
+.contacts__mail {
+  margin-left: 7.35%;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 0;
+
+    width: 26px;
+    height: 20px;
+
+    background-image: url("../../img/icon-mail.svg");
+  }
+}
+
+.contacts__phone::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 163px;
+
+  width: 21.5px;
+  height: 23.5px;
+
+  background-image: url("../../img/icon-phone.svg");
+}

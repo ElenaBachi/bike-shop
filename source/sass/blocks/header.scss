@@ -1,0 +1,32 @@
+.page-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  min-height: 824px;
+
+  background-image: url("../../img/bg-bike-desktop@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+
+  background-color: $bg-color-dark;
+}
+
+@media (max-width: $tablet-width) {
+  .page-header {
+    min-height: 340px;
+
+    background-image: url("../../img/bg-bike-tablet@1x.jpg");
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .page-header {
+    min-height: 390px;
+
+    background-image: url("../../img/bg-bike-mobile@1x.jpg");
+    background-size: 100%;
+    background-position: center center;
+  }
+}

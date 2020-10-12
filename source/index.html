@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <title>Moon - bike shop</title>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+
+  <link href="fonts/OpenSans-Regular.ttf" rel="preload" as="font" crossorigin="anonymous">
+  <link href="fonts/OpenSans-Light.ttf" rel="preload" as="font" crossorigin="anonymous">
+  <link href="fonts/OpenSans-SemiBold.ttf" rel="preload" as="font" crossorigin="anonymous">
+  <link href="fonts/OpenSans-Bold.ttf" rel="preload" as="font" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-  <header>
+  <header class="page-header">
     <nav class="main-nav">
-      <button class="main-nav__toogle"><span class="visually-hidden">Открыть меню</span></button>
+      <button class="main-nav--closed main-nav__toggle"><span class="visually-hidden">Открыть меню</span></button>
 
       <ul class="main-nav__list">
         <li class="main-nav__item">
@@ -97,17 +105,17 @@
 
       <div class="assortment__list bike">
         <figure class="assortment__item bike__road">
-          <img src="img/road-bike-desktop@1x.jpg" alt="Дорожный велосипед">
+          <img src="img/road-bike-desktop@1x.jpg" alt="Дорожный велосипед" width="342" height="503">
           <figcaption>Дорожный велосипед</figcaption>
         </figure>
 
         <figure class="assortment__item bike__mount">
-          <img src="img/mount-bike-desktop@1x.jpg" alt="Горный велосипед">
+          <img src="img/mount-bike-desktop@1x.jpg" alt="Горный велосипед" width="342" height="566">
           <figcaption>Горный велосипед</figcaption>
         </figure>
 
         <figure class="assortment__item bike__kids">
-          <img src="img/kids-bike-desktop@1x.jpg" alt="Детский велосипед">
+          <img src="img/kids-bike-desktop@1x.jpg" alt="Детский велосипед" width="342" height="512.59">
           <figcaption>Детский велосипед</figcaption>
         </figure>
       </div>
@@ -132,7 +140,7 @@
     <h2 class="page-footer__title">Как нас найти?</h2>
     <p class="page-footer__text">Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
 
-    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1998.6593281539995!2d30.32165142226179!3d59.93779492457777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1602102745623!5m2!1sru!2sru" width="957" height="530" style="border: 0;" allowfullscreen=""></iframe>
+    <iframe class="page-footer__map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1998.6593281539995!2d30.32165142226179!3d59.93779492457777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1602102745623!5m2!1sru!2sru"  style="border: 0;" allowfullscreen=""></iframe>
 
     <div class="page-footer__contacts contacts">
       <a class="contacts__mail" href="mailto:puteshestviemechta@gmail.ru">puteshestviemechta@gmail.ru</a>

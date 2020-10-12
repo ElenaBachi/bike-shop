@@ -1,0 +1,48 @@
+.about {
+  margin-left: 9.51%;
+  margin-right: 9.51%;
+  margin-top: 150px;
+  margin-bottom: 130px;
+
+  color: $font-color-dark;
+}
+
+.about__title {
+  margin: 0;
+  margin-bottom: 50px;
+  padding: 0;
+
+  font-weight: 600;
+  text-align: center;
+}
+
+.about__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  margin: 0;
+  padding: 0;
+}
+
+.about__item {
+  width: 22.56%;
+  margin: 0;
+  padding: 0;
+
+  @include list-reset();
+
+  text-align: center;
+}
+
+.about__item span {
+  @include text (28px, 38px, bold);
+
+  color: $bg-color-blue;
+}
+
+.about__item p {
+  @include text (22px, 34px, normal);
+}
+
