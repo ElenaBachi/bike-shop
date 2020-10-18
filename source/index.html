@@ -15,8 +15,8 @@
 </head>
 <body>
   <header class="page-header">
-    <nav class="main-nav">
-      <button class="main-nav--closed main-nav__toggle"><span class="visually-hidden">Открыть меню</span></button>
+    <nav class="main-nav main-nav--closed main-nav--nojs">
+      <button class="main-nav__toggle"><span class="visually-hidden">Открыть меню</span></button>
 
       <ul class="main-nav__list">
         <li class="main-nav__item">
@@ -41,7 +41,7 @@
       <div class="promo__intro">
         <h1 class="visually-hidden">Магазин велосипедов Moon</h1>
 
-        <a href="" class="promo__intro-logo">
+        <a href="#" class="promo__intro-logo">
           <img src="img/logo.svg" alt="Магазин велосипедов Moon" width="67.6" height="20.28">
         </a>
 
@@ -105,17 +105,26 @@
 
       <div class="assortment__list bike">
         <figure class="assortment__item bike__road">
-          <img src="img/road-bike-desktop@1x.jpg" alt="Дорожный велосипед" width="342" height="503">
+          <picture>
+            <source media="(max-width: 1023px)" srcset="img/road-bike-tablet@1x.jpg">
+            <img src="img/road-bike-desktop@1x.jpg" alt="Дорожный велосипед" width="342" height="503">
+          </picture>
           <figcaption>Дорожный велосипед</figcaption>
         </figure>
 
         <figure class="assortment__item bike__mount">
-          <img src="img/mount-bike-desktop@1x.jpg" alt="Горный велосипед" width="342" height="566">
+          <picture>
+            <source media="(max-width: 1023px)" srcset="img/mount-bike-tablet@1x.jpg">
+            <img src="img/mount-bike-desktop@1x.jpg" alt="Горный велосипед" width="342" height="566">
+          </picture>
           <figcaption>Горный велосипед</figcaption>
         </figure>
 
         <figure class="assortment__item bike__kids">
-          <img src="img/kids-bike-desktop@1x.jpg" alt="Детский велосипед" width="342" height="512.59">
+          <picture>
+            <source media="(max-width: 1023px)" srcset="img/kids-bike-tablet@1x.jpg">
+            <img src="img/kids-bike-desktop@1x.jpg" alt="Детский велосипед" width="342" height="512.59">
+          </picture>
           <figcaption>Детский велосипед</figcaption>
         </figure>
       </div>
@@ -126,12 +135,17 @@
       <p class="video__text">В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
 
       <div class="video__player">
-        <img src="img/video-bg-desktop@1x.jpg" alt="Видео">
+        <picture>
+          <source media="(max-width: 1023px)" srcset="img/video-bg-tablet@1x.jpg">
+          <img src="img/video-bg-desktop@1x.jpg" alt="Видео" width="929" height="522">
+        </picture>
 
-        <svg width="65" height="65" viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M32.5 65C50.4493 65 65 50.4493 65 32.5C65 14.5507 50.4493 0 32.5 0C14.5507 0 0 14.5507 0 32.5C0 50.4493 14.5507 65 32.5 65Z" fill="#0AD9C6"/>
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M28.6001 23.3999L41.6001 32.4999L28.6001 41.5999V23.3999Z" fill="#070707"/>
+        <a>
+          <svg width="65" height="65" viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M32.5 65C50.4493 65 65 50.4493 65 32.5C65 14.5507 50.4493 0 32.5 0C14.5507 0 0 14.5507 0 32.5C0 50.4493 14.5507 65 32.5 65Z" fill="#0AD9C6"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M28.6001 23.3999L41.6001 32.4999L28.6001 41.5999V23.3999Z" fill="#070707"/>
           </svg>
+        </a>
       </div>
     </section>
   </main>
@@ -147,5 +161,7 @@
       <a class="contacts__phone" href="tel:+749978468446">+7 (499) -784-684-46</a>
     </div>
   </footer>
+
+  <script src="./js/open-menu.js"></script>
 </body>
 </html>

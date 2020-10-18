@@ -94,3 +94,70 @@ button {
 
   border: none;
 }
+
+@media (max-width: $tablet-width) {
+  .promo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .promo__intro {
+    position: relative;
+    z-index: -1;
+
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    text-align: center;
+
+    background-image: url("../../img/bg-bike-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    background-color: $bg-color-dark;
+  }
+
+  .promo__intro-logo {
+    position: absolute;
+    top: 25px;
+    left: 21px;
+  }
+
+  .promo__intro-title {
+    margin-top: 134px;
+    margin-bottom: 20px;
+
+    @include text (30px, 42px, bold);
+  }
+
+  .promo__intro-text {
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 80px;
+
+    @include text (18px, 32px, lighter);
+  }
+
+  .promo__form {
+    width: 41.85%;
+    margin: 0 auto;
+    margin-top: 70px;
+    padding: 0;
+    color: black;
+  }
+
+  .promo__form-text {
+    @include text (18px, 28px, 600);
+  }
+
+  .promo__form-item input {
+    padding-left: 21px;
+  }
+}

@@ -37,12 +37,48 @@
 }
 
 .about__item span {
-  @include text (28px, 38px, bold);
+  display: block;
 
+  @include text (28px, 38px, bold);
   color: $bg-color-blue;
 }
 
 .about__item p {
+  margin: 0;
+  padding: 0;
+
   @include text (22px, 34px, normal);
 }
 
+@media (max-width: $tablet-width) {
+  .about {
+    margin: 0;
+    margin-top: 70px;
+    margin-bottom: 27px;
+  }
+
+  .about__title {
+    margin-bottom: 30px;
+
+    @include text (24px, 41px, 600);
+  }
+
+  .about__list {
+    width: 72.36%;
+    margin: 0 auto;
+  }
+
+  .about__item {
+    width: 47.3%;
+    margin-right: 30px;
+    margin-bottom: 43px;
+  }
+
+  .about__item:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  .about__item span {
+    margin-bottom: 18px;
+  }
+}

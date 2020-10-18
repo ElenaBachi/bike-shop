@@ -15,34 +15,40 @@
 
   border: 27px solid $bg-color-blue;
   border-radius: 50%;
+
+  box-sizing: border-box;
 }
 
 .bike__mount {
   margin-top: 39px;
-}
 
-.bike__mount::before {
-  content: "";
-  position: absolute;
-  top: 11px;
-  left: 365px;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 18px;
+    left: 355px;
 
-  width: 47px;
-  height: 47px;
+    width: 47px;
+    height: 47px;
 
-  border: 8px solid $bg-color-blue;
-}
+    border: 8px solid $bg-color-blue;
 
-.bike__mount::after {
-  content: "";
-  position: absolute;
-  bottom: 23px;
-  right: 369px;
+    box-sizing: border-box;
+  }
 
-  width: 47px;
-  height: 47px;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 32px;
+    right: 355px;
 
-  border: 8px solid $bg-color-blue;
+    width: 47px;
+    height: 47px;
+
+    border: 8px solid $bg-color-blue;
+
+    box-sizing: border-box;
+  }
 }
 
 .bike__kids::before {
@@ -56,4 +62,45 @@
 
   border: 17px solid $bg-color-blue;
   border-radius: 50%;
+
+  box-sizing: border-box;
+}
+
+@media (max-width: $tablet-width) {
+  .bike figure {
+    margin-bottom: 50px;
+
+    &:last-child {
+      margin: 0 auto;
+    }
+  }
+
+  .bike__mount {
+    margin-top: 0;
+
+    &::before,
+    &::after {
+      content: none;
+    }
+  }
+
+  .bike__road::before {
+    top: 201px;
+    left: -37px;
+
+    width: 127px;
+    height: 127px;
+
+    border: 18px solid $bg-color-blue;
+  }
+
+  .bike__kids::before {
+    top: 384px;
+    right: 135px;
+
+    width: 68px;
+    height: 68px;
+
+    border: 13px solid $bg-color-blue;
+  }
 }

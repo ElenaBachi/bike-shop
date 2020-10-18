@@ -45,3 +45,11 @@
 
   background-image: url("../../img/icon-phone.svg");
 }
+
+@media (max-width: $tablet-width) {
+  .contacts {
+    width: 72.66%;
+    margin-top: 20px;
+    margin-bottom: 51.88px;
+  }
+}

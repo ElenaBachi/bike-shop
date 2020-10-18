@@ -37,3 +37,39 @@
   top: 229px;
   left: 432px;
 }
+
+@media (max-width: $tablet-width) {
+  .video {
+    min-height: 413px;
+    padding-top: 70px;
+  }
+
+  .video__title {
+    @include text (24px, 30px, 600);
+  }
+
+  .video__text {
+    display: block;
+
+    width: 55.73%;
+    margin-bottom: 40px;
+  }
+
+  .video__player {
+    position: absolute;
+    left: 17.32%;
+  }
+
+  .video__player img {
+    width: 503px;
+    height: 282px;
+  }
+
+  .video__player svg {
+    top: 96px;
+    left: 206px;
+
+    width: 90.36px;
+    height: 90.36px;
+  }
+}

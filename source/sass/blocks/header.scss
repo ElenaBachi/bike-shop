@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: space-between;
 
+  width: 100%;
   min-height: 824px;
 
   background-image: url("../../img/bg-bike-desktop@1x.jpg");
@@ -17,7 +18,7 @@
   .page-header {
     min-height: 340px;
 
-    background-image: url("../../img/bg-bike-tablet@1x.jpg");
+    background: none;
   }
 }
 
