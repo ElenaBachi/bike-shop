@@ -161,3 +161,36 @@ button {
     padding-left: 21px;
   }
 }
+
+@media (max-width: $mobile-width) {
+  .promo__intro {
+    background-image: url("../../img/bg-bike-mobile@1x.jpg");
+  }
+
+  .promo__intro-logo {
+    left: 16px;
+  }
+
+  .promo__intro-logo img {
+    width: 67.6px;
+    height: 20.28px;
+  }
+
+  .promo__intro-title {
+    margin-top: 120px;
+  }
+
+  .promo__intro-text {
+    margin-left: 4.69%;
+    margin-right: 4.69%;
+    margin-bottom: 70px;
+  }
+
+  .promo__form {
+    width: 90%;
+  }
+
+  .promo__form-item input {
+    padding-left: 26px;
+  }
+}

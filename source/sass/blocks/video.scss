@@ -73,3 +73,36 @@
     height: 90.36px;
   }
 }
+
+@media (max-width: $mobile-width) {
+  .video {
+    min-height: 384px;
+    padding-top: 84px;
+  }
+
+  .video__text {
+    display: block;
+
+    width: 90%;
+    margin-bottom: 50px;
+  }
+
+  .video__player {
+    left: 0;
+
+    margin: 0 auto;
+  }
+
+  .video__player img {
+    width: 90%;
+    height: 161.66px;
+  }
+
+  .video__player svg {
+    top: 48px;
+    left: 128px;
+
+    width: 65px;
+    height: 65px;
+  }
+}

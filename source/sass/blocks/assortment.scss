@@ -60,3 +60,16 @@
     height: 300px;
   }
 }
+
+@media (max-width: $tablet-width) {
+  .assortment {
+    padding-bottom: 52px;
+  }
+
+  .assortment__list {
+    flex-direction: column;
+
+    width: 84.38%;
+    margin: 0 auto;
+  }
+}

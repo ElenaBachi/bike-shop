@@ -9,6 +9,12 @@
   border-bottom: 1px solid rgba(#ffffff, 0.2%);
 }
 
+.main-nav a {
+  color: #ffffff;
+
+  @include text (16px, 32px, lighter);
+}
+
 .main-nav__list {
   display: flex;
   flex-direction: row;
@@ -153,5 +159,11 @@
 
   .main-nav--nojs .main-nav__item {
     display: block;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .main-nav--opened.main-nav {
+    width: 100%;
   }
 }

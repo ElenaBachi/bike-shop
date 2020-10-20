@@ -7,10 +7,12 @@ const onNavToggleClick = () => {
   if (isOpened) {
     menu.classList.remove('main-nav--opened');
     menu.classList.add('main-nav--closed');
-  }
 
-  menu.classList.remove('main-nav--closed');
-  menu.classList.add('main-nav--opened');
+    navToggle.navToggle.style.border = 'none';
+  } else {
+    menu.classList.remove('main-nav--closed');
+    menu.classList.add('main-nav--opened');
+  }
 };
 
 menu.classList.remove('main-nav--nojs');

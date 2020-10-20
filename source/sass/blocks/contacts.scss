@@ -15,7 +15,7 @@
 .contacts a {
   @include text (16px, auto, normal);
 
-  color: #000000;
+  color: rgba(#000000, 0.5%);
 }
 
 .contacts__mail {
@@ -51,5 +51,31 @@
     width: 72.66%;
     margin-top: 20px;
     margin-bottom: 51.88px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .contacts {
+    flex-direction: column;
+
+    width: 83.75%;
+    margin-top: 31px;
+    margin-bottom: 35.88px;
+  }
+
+  .contacts a:first-child {
+    margin-bottom: 9.12px;
+  }
+
+  .contacts__phone::before {
+    content: "";
+    position: absolute;
+    top: 42px;
+    left: 29px;
+
+    width: 21.5px;
+    height: 23.5px;
+
+    background-image: url("../../img/icon-phone.svg");
   }
 }

@@ -82,3 +82,31 @@
     margin-bottom: 18px;
   }
 }
+
+@media (max-width: $mobile-width) {
+  .about {
+    margin-bottom: 70px;
+  }
+
+  .about__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 91.24%;
+  }
+
+  .about__item {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 41.67px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .about__item span {
+    margin-bottom: 0;
+  }
+}

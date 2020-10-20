@@ -104,3 +104,23 @@
     border: 13px solid $bg-color-blue;
   }
 }
+
+@media (max-width: $mobile-width) {
+  .bike figure {
+    margin-bottom: 40px;
+  }
+
+  .bike__road::before {
+    left: -24px;
+  }
+
+  .bike__kids::before {
+    top: 767px;
+    right: -15px;
+
+    width: 68px;
+    height: 68px;
+
+    border: 13px solid $bg-color-blue;
+  }
+}
