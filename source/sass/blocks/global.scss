@@ -3,7 +3,7 @@
   font-family: "Open Sans";
   font-style: normal;
   font-display: swap;
-  src: url("../../fonts/OpenSans-Regular.ttf") format("ttf");
+  src: url("../../fonts/open-sans-regular.woff2") format("woff2"), url("../../fonts/open-sans-regular.woff") format("woff");
 }
 
 @font-face {
@@ -11,7 +11,7 @@
   font-family: "Open Sans";
   font-style: normal;
   font-display: swap;
-  src: url("../../fonts/OpenSans-Light.ttf") format("ttf");
+  src: url("../../fonts/open-sans-light.woff2") format("woff2"), url("../../fonts/open-sans-light.woff") format("woff");
 }
 
 @font-face {
@@ -19,7 +19,7 @@
   font-family: "Open Sans";
   font-style: normal;
   font-display: swap;
-  src: url("../../fonts/OpenSans-SemiBold.ttf") format("ttf");
+  src: url("../../fonts/open-sans-semibold.woff2") format("woff2"), url("../../fonts/open-sans-semibold.woff") format("woff");
 }
 
 @font-face {
@@ -27,7 +27,7 @@
   font-family: "Open Sans";
   font-style: normal;
   font-display: swap;
-  src: url("../../fonts/OpenSans-Bold.ttf") format("ttf");
+  src: url("../../fonts/open-sans-bold.woff2") format("woff2"), url("../../fonts/open-sans-bold.woff") format("woff");
 }
 
 body {
