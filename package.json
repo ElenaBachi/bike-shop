@@ -3,7 +3,7 @@
   "author": "Bachi Elena",
   "version": "1.0.0",
   "description": "Bike shop",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
@@ -28,6 +28,10 @@
     "node": "8.16"
   },
   "devDependencies": {
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.12.3",
+    "@babel/node": "^7.12.6",
+    "@babel/preset-env": "^7.12.1",
     "@htmlacademy/editorconfig-cli": "1.0.x",
     "autoprefixer": "^9.0.0",
     "browser-sync": "2.26.x",
@@ -49,6 +53,7 @@
     "stylelint-config-htmlacademy": "0.1.x"
   },
   "dependencies": {
-    "del": "6.0.0"
+    "del": "6.0.0",
+    "imask": "6.0.5"
   }
 }

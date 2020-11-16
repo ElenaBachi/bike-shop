@@ -10,13 +10,13 @@
   background-color: $bg-color-dark;
 }
 
-.video__title {
+.video h2 {
   margin: 0;
   padding: 0;
   margin-bottom: 20px;
 }
 
-.video__text {
+.video p {
   display: block;
 
   width: 23.61%;
@@ -44,11 +44,11 @@
     padding-top: 70px;
   }
 
-  .video__title {
+  .video h2 {
     @include text (24px, 30px, 600);
   }
 
-  .video__text {
+  .video p {
     display: block;
 
     width: 55.73%;
@@ -56,7 +56,6 @@
   }
 
   .video__player {
-    position: absolute;
     left: 17.32%;
   }
 
@@ -80,7 +79,7 @@
     padding-top: 84px;
   }
 
-  .video__text {
+  .video p {
     display: block;
 
     width: 90%;
@@ -90,6 +89,7 @@
   .video__player {
     left: 0;
 
+    width: 100%;
     margin: 0 auto;
   }
 
