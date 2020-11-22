@@ -15,6 +15,6 @@
   };
 
   Menu.classList.remove('main-nav--nojs');
-  
+
   NavToggle.addEventListener('click', onNavToggleClick);
 })();

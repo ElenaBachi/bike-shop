@@ -28,10 +28,6 @@
     "node": "8.16"
   },
   "devDependencies": {
-    "@babel/cli": "^7.12.1",
-    "@babel/core": "^7.12.3",
-    "@babel/node": "^7.12.6",
-    "@babel/preset-env": "^7.12.1",
     "@htmlacademy/editorconfig-cli": "1.0.x",
     "autoprefixer": "^9.0.0",
     "browser-sync": "2.26.x",
@@ -47,6 +43,7 @@
     "gulp-sass": "4.1.x",
     "gulp-sourcemaps": "2.6.x",
     "gulp-svgstore": "7.0.x",
+    "gulp-uglify": "3.0.x",
     "gulp-webp": "4.0.x",
     "posthtml-include": "1.4.x",
     "stylelint": "13.7.x",

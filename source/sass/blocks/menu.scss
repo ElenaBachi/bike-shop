@@ -56,6 +56,10 @@
     background-color: #ffffff;
   }
 
+  .main-nav--nojs {
+    position: static;
+  }
+
   .main-nav__list {
     display: flex;
     flex-direction: column;
