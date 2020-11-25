@@ -138,8 +138,8 @@
   }
 
   .promo__intro p {
-    margin-left: 25%;
-    margin-right: 25%;
+    width: 56.71%;
+    margin: 0 auto;
     margin-bottom: 80px;
 
     @include text (18px, 32px, lighter);
@@ -181,8 +181,7 @@
   }
 
   .promo__intro p {
-    margin-left: 4.69%;
-    margin-right: 4.69%;
+    width: 87.6%;
     margin-bottom: 70px;
   }
 

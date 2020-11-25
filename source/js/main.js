@@ -1,20 +1,20 @@
 (function() {
-  const Menu = document.querySelector('.main-nav');
-  const NavToggle = Menu.querySelector('.main-nav__toggle');
+  const MENU = document.querySelector('.main-nav');
+  const NAV_TOOGLE = MENU.querySelector('.main-nav__toggle');
 
   const onNavToggleClick = () => {
-    const isOpened = Menu.classList.contains('main-nav--opened');
+    const isOpened = MENU.classList.contains('main-nav--opened');
 
     if (isOpened) {
-      Menu.classList.remove('main-nav--opened');
-      Menu.classList.add('main-nav--closed');
+      MENU.classList.remove('main-nav--opened');
+      MENU.classList.add('main-nav--closed');
     } else {
-      Menu.classList.remove('main-nav--closed');
-      Menu.classList.add('main-nav--opened');
+      MENU.classList.remove('main-nav--closed');
+      MENU.classList.add('main-nav--opened');
     }
   };
 
-  Menu.classList.remove('main-nav--nojs');
+  MENU.classList.remove('main-nav--nojs');
 
-  NavToggle.addEventListener('click', onNavToggleClick);
+  NAV_TOOGLE.addEventListener('click', onNavToggleClick);
 })();
