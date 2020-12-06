@@ -12,16 +12,31 @@
 .main-nav a {
   color: #ffffff;
 
-  @include text (16px, 32px, lighter);
+  &:hover,
+  &:focus {
+    color: $bg-color-blue;
+  }
+}
+
+.main-nav__wrapper {
+  width: 95.65%;
+  margin: 0 auto;
 }
 
 .main-nav__list {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
   flex-wrap: wrap;
 
   @include list-reset();
+}
+
+.main-nav__item {
+  margin-right: 16.16%;
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .main-nav__toggle {
@@ -33,6 +48,12 @@
     color: #48494d;
 
     @include text (20px, 140%, normal);
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+      text-decoration-color: $bg-color-blue;
+    }
   }
 
   .main-nav--closed {
@@ -59,9 +80,17 @@
     position: static;
   }
 
+  .main-nav__wrapper {
+    width: 100%;
+  }
+
   .main-nav__list {
     display: flex;
     flex-direction: column;
+  }
+
+  .main-nav__item {
+    margin-right: 0;
   }
 
   .main-nav__toggle {
@@ -80,6 +109,8 @@
     border-radius: 0%;
 
     background-color: $bg-color-blue;
+
+    cursor: pointer;
   }
 
   .main-nav--closed .main-nav__toggle::before {

@@ -1,9 +1,8 @@
 .video {
-  min-height: 706px;
+  position: relative;
+  max-height: 706px;
   margin: 0;
   padding: 0;
-  padding-top: 120px;
-  box-sizing: border-box;
 
   text-align: center;
 
@@ -13,7 +12,10 @@
 .video h2 {
   margin: 0;
   padding: 0;
+  padding-top: 120px;
   margin-bottom: 20px;
+
+  @include text (30px, 30px, 600);
 }
 
 .video p {
@@ -21,30 +23,56 @@
 
   width: 23.61%;
   margin: 0 auto;
-  margin-bottom: 56px;
+  margin-bottom: -42px;
   padding: 0;
 
   @include text (16px, 28px, lighter);
 }
 
 .video__player {
-  position: absolute;
-  left: 17.78%;
+  position: relative;
+  top: 98px;
+
+  width: 64.51%;
+  margin: 0 auto;
+}
+
+.video__player img {
+  width: 100%;
+  height: auto;
 }
 
 .video__player svg {
   position: absolute;
   top: 229px;
   left: 46.5%;
+
+  &:hover,
+  &:focus {
+    top: 219px;
+    left: 45.43%;
+
+    width: 85px;
+    height: 85px;
+  }
+
+  &:active {
+    top: 229px;
+    left: 46.5%;
+
+    width: 65px;
+    height: 65px;
+  }
 }
 
 @media (max-width: $tablet-width) {
   .video {
-    min-height: 413px;
-    padding-top: 70px;
+    max-height: 413px;
   }
 
   .video h2 {
+    padding-top: 70px;
+
     @include text (24px, 30px, 600);
   }
 
@@ -52,18 +80,13 @@
     display: block;
 
     width: 55.73%;
-    margin-bottom: 40px;
+    margin-bottom: -45px;
   }
 
   .video__player {
-    left: 17.32%;
+    top: 85px;
 
     width: 65.49%;
-  }
-
-  .video__player img {
-    width: 100%;
-    height: 282px;
   }
 
   .video__player svg {
@@ -72,30 +95,44 @@
 
     width: 90.36px;
     height: 90.36px;
+
+    &:hover,
+    &:focus {
+      top: 91px;
+      left: 39.96%;
+
+      width: 100.36px;
+      height: 100.36px;
+    }
+
+    &:active {
+      top: 96px;
+      left: 40.95%;
+
+      width: 90.36px;
+      height: 90.36px;
+    }
   }
 }
 
 @media (max-width: $mobile-width) {
   .video {
-    min-height: 384px;
+    max-height: 384px;
+  }
+
+  .video h2 {
     padding-top: 84px;
   }
 
   .video p {
-    display: block;
-
-    width: 90%;
-    margin-bottom: 50px;
+    width: 95%;
+    margin-bottom: 1.34px;
   }
 
   .video__player {
-    left: 5%;
+    top: 48.66px;
 
     width: 90%;
-  }
-
-  .video__player img {
-    height: 161.66px;
   }
 
   .video__player svg {
@@ -104,5 +141,22 @@
 
     width: 65px;
     height: 65px;
+
+    &:hover,
+    &:focus {
+      top: 43px;
+      left: 37.15%;
+
+      width: 75px;
+      height: 75px;
+    }
+
+    &:active {
+      top: 48px;
+      left: 38.89%;
+
+      width: 65px;
+      height: 65px;
+    }
   }
 }

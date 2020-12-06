@@ -7,8 +7,8 @@
 
   width: 38.75%;
   margin: 0 auto;
-  margin-top: 35px;
-  margin-bottom: 98px;
+  margin-top: 31px;
+  margin-bottom: 96px;
   padding: 0;
 }
 
@@ -16,6 +16,13 @@
   @include text (16px, auto, normal);
 
   color: rgba(#000000, 0.5%);
+
+  &:hover,
+  &:focus {
+    color: rgba(#000000, 0.7%);
+    text-decoration: underline;
+    text-decoration-color: rgba(#000000, 0.7%);
+  }
 }
 
 .contacts__mail {
@@ -34,22 +41,27 @@
   }
 }
 
-.contacts__phone::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 163px;
+.contacts__phone {
+  margin-left: 9.32%;
+  padding-right: 15px;
 
-  width: 21.5px;
-  height: 23.5px;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 64.14%;
 
-  background-image: url("../../img/icon-phone.svg");
+    width: 21.5px;
+    height: 23.5px;
+
+    background-image: url("../../img/icon-phone.svg");
+  }
 }
 
 @media (max-width: $tablet-width) {
   .contacts {
     width: 72.66%;
-    margin-top: 20px;
+    margin-top: 15px;
     margin-bottom: 51.88px;
   }
 }
@@ -59,7 +71,7 @@
     flex-direction: column;
 
     width: 83.75%;
-    margin-top: 31px;
+    margin-top: 30px;
     margin-bottom: 35.88px;
   }
 

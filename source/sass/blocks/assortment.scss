@@ -9,29 +9,36 @@
 
 .assortment h2 {
   margin: 0;
-  margin-bottom: 50px;
   padding: 0;
   padding-top: 150px;
+
+  @include text (30px, 30px, 600);
 }
 
 .assortment__list {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin-left: 11.74%;
-  margin-right: 10.07%;
+  width: 78.2%;
+  margin: 0 auto;
 
   @include text (22px, 34px, 600);
 }
 
 .assortment__item {
+  width: 30.37%;
   margin: 0;
+  margin-right: 50px;
   padding: 0;
+
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
 }
 
 .assortment__item img {
   display: block;
+  width: 100%;
+  height: auto;
   margin: 0;
   margin-bottom: 20px;
   padding: 0;
@@ -40,7 +47,7 @@
 @media (max-width: $tablet-width) {
   .assortment {
     width: 100%;
-    padding-bottom: 124px;
+    padding-bottom: 70px;
   }
 
   .assortment h2 {
@@ -51,25 +58,37 @@
   }
 
   .assortment__list {
-    margin-left: 11.59%;
-    margin-right: 11.59%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 76.82%;
   }
 
-  .assortment__item img {
-    width: 270px;
-    height: 300px;
+  .assortment__item {
+    width: 45.69%;
+    margin-right: 0;
   }
 }
 
 @media (max-width: $mobile-width) {
   .assortment {
-    padding-bottom: 108px;
+    padding-bottom: 52px;
   }
 
   .assortment__list {
     flex-direction: column;
 
     width: 84.38%;
+  }
+
+  .assortment__item {
+    width: 270px;
     margin: 0 auto;
+  }
+
+  .assortment__item img {
+    width: 270px;
+    height: 300px;
+    margin: 0 auto;
+    margin-bottom: 20px;
   }
 }
