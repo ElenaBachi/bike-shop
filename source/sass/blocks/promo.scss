@@ -3,8 +3,9 @@
   flex-direction: row;
   justify-content: space-between;
 
-  width: 61%;
+  width: 61.11%;
   margin: 0 auto;
+  margin-top: 255px;
   margin-bottom: 240px;
 }
 
@@ -17,6 +18,8 @@
 .promo__intro-logo {
   display: block;
   margin-top: 0;
+  width: 67.6px;
+  height: 20.28px;
 }
 
 .promo__intro h2 {
@@ -87,6 +90,7 @@
 }
 
 .promo__form-item input {
+  padding-top: 2px;
   padding-left: 29px;
 
   background-color: #ffffff;
@@ -104,6 +108,11 @@
 
     outline: none;
     box-sizing: border-box;
+  }
+
+  &::placeholder {
+    @include text (15px, 24px, normal);
+    color: #1c1c1c;
   }
 }
 

@@ -154,31 +154,35 @@
     </section>
 
     <section class="video" id="video">
-      <h2>Видео про велосипеды</h2>
-      <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
+      <div class="video__wrapper">
+        <h2>Видео про велосипеды</h2>
+        <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
 
-      <div class="video__player">
-        <picture>
-          <source type="image/webp" media="(max-width: 767px)" srcset="img/video-bg-mobile@1x.webp 1x, img/video-bg-mobile@2x.webp 2x">
-          <source type="image/webp" media="(max-width: 1023px)" srcset="img/video-bg-tablet@1x.webp 1x, img/video-bg-tablet@2x.webp 2x">
-          <source type="image/webp" srcset="img/video-bg-desktop@1x.webp 1x, img/video-bg-desktop@2x.webp 2x">
+        <div class="video__player">
+          <picture>
+            <source type="image/webp" media="(max-width: 767px)" srcset="img/video-bg-mobile@1x.webp 1x, img/video-bg-mobile@2x.webp 2x">
+            <source type="image/webp" media="(max-width: 1023px)" srcset="img/video-bg-tablet@1x.webp 1x, img/video-bg-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/video-bg-desktop@1x.webp 1x, img/video-bg-desktop@2x.webp 2x">
 
-          <!-- Mobile: 1x: 288px; 2px: 576px-->
-          <source media="(max-width: 767px)" srcset="img/video-bg-mobile@1x.jpg 1x, img/video-bg-mobile@2x.jpg 2x">
-          <!-- Tablet: 1x: 503px; 2px: 1006px-->
-          <source media="(max-width: 1023px)" srcset="img/video-bg-tablet@1x.jpg 1x, img/video-bg-tablet@2x.jpg 2x">
-          <!-- Desktop: 1x: 929px; 2px: 1858px-->
-          <img src="img/video-bg-desktop@1x.jpg" srcset="img/video-bg-desktop@2x.jpg 2x" alt="Видео" width="929" height="522">
-        </picture>
+            <!-- Mobile: 1x: 288px; 2px: 576px-->
+            <source media="(max-width: 767px)" srcset="img/video-bg-mobile@1x.jpg 1x, img/video-bg-mobile@2x.jpg 2x">
+            <!-- Tablet: 1x: 503px; 2px: 1006px-->
+            <source media="(max-width: 1023px)" srcset="img/video-bg-tablet@1x.jpg 1x, img/video-bg-tablet@2x.jpg 2x">
+            <!-- Desktop: 1x: 929px; 2px: 1858px-->
+            <img src="img/video-bg-desktop@1x.jpg" srcset="img/video-bg-desktop@2x.jpg 2x" alt="Видео" width="929" height="522">
+          </picture>
 
-        <a>
-          <svg width="65" height="65">
-            <use xlink:href="img/sprite.svg#icon-play"></use>
-          </svg>
-        </a>
+          <a>
+            <svg width="65" height="65">
+              <use xlink:href="img/sprite.svg#icon-play"></use>
+            </svg>
+          </a>
+        </div>
       </div>
     </section>
   </main>
+
+  <!---->
 
   <footer class="page-footer">
     <h2 id="contacts">Как нас найти?</h2>

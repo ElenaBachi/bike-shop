@@ -64,30 +64,43 @@
     margin-top: 15px;
     margin-bottom: 51.88px;
   }
+
+  .contacts__phone {
+    margin-left: 0;
+    padding-right: 10px;
+  }
 }
 
 @media (max-width: $mobile-width) {
   .contacts {
     flex-direction: column;
 
-    width: 83.75%;
-    margin-top: 30px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 23px;
     margin-bottom: 35.88px;
   }
 
-  .contacts a:first-child {
-    margin-bottom: 9.12px;
+  .contacts__mail {
+    margin: 0;
+    margin-bottom: 17.12px;
+    padding: 0;
+    padding-left: 40px;
+
+    &::before {
+      top: 6px;
+      left: 31px;
+    }
   }
 
-  .contacts__phone::before {
-    content: "";
-    position: absolute;
-    top: 42px;
-    left: 29px;
+  .contacts__phone {
+    margin: 0;
+    padding: 0;
+    padding-left: 30px;
 
-    width: 21.5px;
-    height: 23.5px;
-
-    background-image: url("../../img/icon-phone.svg");
+    &::before {
+      top: 47px;
+      left: 60px;
+    }
   }
 }

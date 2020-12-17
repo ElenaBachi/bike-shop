@@ -1,10 +1,14 @@
 .video {
-  position: relative;
-  max-height: 706px;
+  max-height: 804px;
   margin: 0;
   padding: 0;
 
   text-align: center;
+}
+
+.video__wrapper {
+  width: 100%;
+  max-height: 706px;
 
   background-color: $bg-color-dark;
 }
@@ -23,7 +27,7 @@
 
   width: 23.61%;
   margin: 0 auto;
-  margin-bottom: -42px;
+  margin-bottom: 56px;
   padding: 0;
 
   @include text (16px, 28px, lighter);
@@ -31,9 +35,7 @@
 
 .video__player {
   position: relative;
-  top: 98px;
-
-  width: 64.51%;
+  width: 929px;
   margin: 0 auto;
 }
 
@@ -45,7 +47,9 @@
 .video__player svg {
   position: absolute;
   top: 229px;
-  left: 46.5%;
+  left: 432px;
+
+  cursor: pointer;
 
   &:hover,
   &:focus {
@@ -67,6 +71,10 @@
 
 @media (max-width: $tablet-width) {
   .video {
+    max-height: 498px;
+  }
+
+  .video__wrapper {
     max-height: 413px;
   }
 
@@ -80,18 +88,16 @@
     display: block;
 
     width: 55.73%;
-    margin-bottom: -45px;
+    margin-bottom: 40px;
   }
 
   .video__player {
-    top: 85px;
-
-    width: 65.49%;
+    width: 503px;
   }
 
   .video__player svg {
     top: 96px;
-    left: 40.95%;
+    left: 206px;
 
     width: 90.36px;
     height: 90.36px;
@@ -117,7 +123,11 @@
 
 @media (max-width: $mobile-width) {
   .video {
-    max-height: 384px;
+    height: 432.66px;
+  }
+
+  .video__wrapper {
+    height: 384px;
   }
 
   .video h2 {
@@ -125,14 +135,12 @@
   }
 
   .video p {
-    width: 95%;
-    margin-bottom: 1.34px;
+    width: 290px;
+    margin-bottom: 53px;
   }
 
   .video__player {
-    top: 48.66px;
-
-    width: 90%;
+    width: 288px;
   }
 
   .video__player svg {

@@ -62,9 +62,6 @@ input[type="radio"].visually-hidden {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   width: 100%;
   min-height: 824px;
   background-image: url("../img/bg-bike-desktop@1x.jpg");
@@ -111,14 +108,12 @@ input[type="radio"].visually-hidden {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 0;
   padding: 0;
   list-style: none; }
-
-.main-nav__item {
-  margin-right: 16.16%; }
-  .main-nav__item:last-child {
-    margin-right: 0; }
 
 .main-nav__toggle {
   display: none; }
@@ -252,8 +247,9 @@ input[type="radio"].visually-hidden {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 61%;
+  width: 61.11%;
   margin: 0 auto;
+  margin-top: 255px;
   margin-bottom: 240px; }
 
 .promo__intro {
@@ -263,7 +259,9 @@ input[type="radio"].visually-hidden {
 
 .promo__intro-logo {
   display: block;
-  margin-top: 0; }
+  margin-top: 0;
+  width: 67.6px;
+  height: 20.28px; }
 
 .promo__intro h2 {
   margin: 0;
@@ -334,6 +332,7 @@ input[type="radio"].visually-hidden {
           box-sizing: border-box; }
 
 .promo__form-item input {
+  padding-top: 2px;
   padding-left: 29px;
   background-color: #ffffff;
   border: 1px solid #c9ccd4;
@@ -345,6 +344,26 @@ input[type="radio"].visually-hidden {
     outline: none;
     -webkit-box-sizing: border-box;
             box-sizing: border-box; }
+  .promo__form-item input::-webkit-input-placeholder {
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: normal;
+    color: #1c1c1c; }
+  .promo__form-item input::-moz-placeholder {
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: normal;
+    color: #1c1c1c; }
+  .promo__form-item input::-ms-input-placeholder {
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: normal;
+    color: #1c1c1c; }
+  .promo__form-item input::placeholder {
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: normal;
+    color: #1c1c1c; }
 
 .promo__form-item button {
   height: 51px;
@@ -746,11 +765,14 @@ input[type="radio"].visually-hidden {
     border: 13px solid #0ad9c6; } }
 
 .video {
-  position: relative;
-  max-height: 706px;
+  max-height: 804px;
   margin: 0;
   padding: 0;
-  text-align: center;
+  text-align: center; }
+
+.video__wrapper {
+  width: 100%;
+  max-height: 706px;
   background-color: #131314; }
 
 .video h2 {
@@ -766,7 +788,7 @@ input[type="radio"].visually-hidden {
   display: block;
   width: 23.61%;
   margin: 0 auto;
-  margin-bottom: -42px;
+  margin-bottom: 56px;
   padding: 0;
   font-size: 16px;
   line-height: 28px;
@@ -774,8 +796,7 @@ input[type="radio"].visually-hidden {
 
 .video__player {
   position: relative;
-  top: 98px;
-  width: 64.51%;
+  width: 929px;
   margin: 0 auto; }
 
 .video__player img {
@@ -785,7 +806,8 @@ input[type="radio"].visually-hidden {
 .video__player svg {
   position: absolute;
   top: 229px;
-  left: 46.5%; }
+  left: 432px;
+  cursor: pointer; }
   .video__player svg:hover, .video__player svg:focus {
     top: 219px;
     left: 45.43%;
@@ -799,6 +821,8 @@ input[type="radio"].visually-hidden {
 
 @media (max-width: 1023px) {
   .video {
+    max-height: 498px; }
+  .video__wrapper {
     max-height: 413px; }
   .video h2 {
     padding-top: 70px;
@@ -808,13 +832,12 @@ input[type="radio"].visually-hidden {
   .video p {
     display: block;
     width: 55.73%;
-    margin-bottom: -45px; }
+    margin-bottom: 40px; }
   .video__player {
-    top: 85px;
-    width: 65.49%; }
+    width: 503px; }
   .video__player svg {
     top: 96px;
-    left: 40.95%;
+    left: 206px;
     width: 90.36px;
     height: 90.36px; }
     .video__player svg:hover, .video__player svg:focus {
@@ -830,15 +853,16 @@ input[type="radio"].visually-hidden {
 
 @media (max-width: 767px) {
   .video {
-    max-height: 384px; }
+    height: 432.66px; }
+  .video__wrapper {
+    height: 384px; }
   .video h2 {
     padding-top: 84px; }
   .video p {
-    width: 95%;
-    margin-bottom: 1.34px; }
+    width: 290px;
+    margin-bottom: 53px; }
   .video__player {
-    top: 48.66px;
-    width: 90%; }
+    width: 288px; }
   .video__player svg {
     top: 48px;
     left: 38.89%;
@@ -861,17 +885,20 @@ input[type="radio"].visually-hidden {
   text-align: center; }
 
 .page-footer h2 {
+  width: 15.69%;
   margin: 0;
+  margin-left: 41.8%;
   padding: 0;
   font-size: 30px;
   line-height: 30px;
-  font-weight: 600; }
+  font-weight: 600;
+  letter-spacing: -0.5px; }
 
 .page-footer p {
   width: 38.54%;
-  margin: 0 auto;
-  margin-top: 30px;
+  margin-top: 29px;
   margin-bottom: 41px;
+  margin-left: 30.21%;
   padding: 0;
   font-size: 17px;
   line-height: 31px;
@@ -889,22 +916,29 @@ input[type="radio"].visually-hidden {
   .page-footer {
     padding-top: 155px; }
   .page-footer h2 {
+    width: 23.57%;
+    margin-left: 38.28%;
     font-size: 24px;
     line-height: 30px;
     font-weight: 600; }
   .page-footer p {
-    width: 100%;
+    width: 81.9%;
+    margin: 0 auto;
     margin-top: 20px;
     margin-bottom: 20px; }
   .page-footer__map {
     width: 698px;
     height: 545px;
-    background-image: url("../../img/map-tablet@1x.jpg"); } }
+    background-image: url("../../img/map-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; } }
 
 @media (max-width: 767px) {
   .page-footer {
-    padding-top: 119px; }
+    padding-top: 70.34px; }
   .page-footer h2 {
+    width: 100%;
+    margin: 0 auto;
     font-size: 18px;
     line-height: 30px;
     font-weight: 600; }
@@ -978,7 +1012,10 @@ input[type="radio"].visually-hidden {
   .contacts {
     width: 72.66%;
     margin-top: 15px;
-    margin-bottom: 51.88px; } }
+    margin-bottom: 51.88px; }
+  .contacts__phone {
+    margin-left: 0;
+    padding-right: 10px; } }
 
 @media (max-width: 767px) {
   .contacts {
@@ -986,16 +1023,22 @@ input[type="radio"].visually-hidden {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 83.75%;
-    margin-top: 30px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 23px;
     margin-bottom: 35.88px; }
-  .contacts a:first-child {
-    margin-bottom: 9.12px; }
-  .contacts__phone::before {
-    content: "";
-    position: absolute;
-    top: 42px;
-    left: 29px;
-    width: 21.5px;
-    height: 23.5px;
-    background-image: url("../../img/icon-phone.svg"); } }
+  .contacts__mail {
+    margin: 0;
+    margin-bottom: 17.12px;
+    padding: 0;
+    padding-left: 40px; }
+    .contacts__mail::before {
+      top: 6px;
+      left: 31px; }
+  .contacts__phone {
+    margin: 0;
+    padding: 0;
+    padding-left: 30px; }
+    .contacts__phone::before {
+      top: 47px;
+      left: 60px; } }
