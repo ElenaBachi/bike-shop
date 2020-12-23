@@ -2,26 +2,30 @@
   padding-bottom: 147px;
 
   color: $font-color-dark;
-  text-align: center;
 
   background-color: $bg-color-grey;
 }
 
 .assortment h2 {
+  width: 288px;
   margin: 0;
+  margin-left: 39.65%;
   padding: 0;
   padding-top: 150px;
 
   @include text (30px, 30px, 600);
+  letter-spacing: -0.5px;
 }
 
 .assortment__list {
   display: flex;
   flex-direction: row;
   width: 78.2%;
-  margin: 0 auto;
+  margin: 0;
+  margin-left: 11.74%;
 
   @include text (22px, 34px, 600);
+  text-align: center;
 }
 
 .assortment__item {
@@ -51,10 +55,12 @@
   }
 
   .assortment h2 {
+    margin-left: 240px;
     margin-bottom: 30px;
     padding-top: 50px;
 
     @include text (24px, 41px, 600);
+    text-align: center;
   }
 
   .assortment__list {
@@ -74,10 +80,16 @@
     padding-bottom: 52px;
   }
 
+  .assortment h2 {
+    width: 230px;
+    margin-left: 14.06%;
+  }
+
   .assortment__list {
     flex-direction: column;
 
     width: 84.38%;
+    margin: 0 auto;
   }
 
   .assortment__item {
